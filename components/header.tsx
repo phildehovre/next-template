@@ -46,7 +46,7 @@ const Header = () => {
           <h1>Logo</h1>
         </Link>
         <DropdownMenu>
-          <DropdownMenuTrigger asChild>
+          <DropdownMenuTrigger asChild className="sm:hidden">
             <MenuIcon />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56">
@@ -130,7 +130,7 @@ const Header = () => {
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-        <ul className="hidden md:flex justify-between gap-2 ">
+        <ul className="hidden sm:flex justify-between gap-2 ">
           <li>
             <Link href="/">Home</Link>
           </li>

@@ -1,0 +1,28 @@
+.bg_mesh {
+    background-color: transparent;
+    background-image: radial-gradient(black, 1px, transparent 5px);
+    background-size: 5px 5px;
+    transform: skewX(-20deg);
+}
+
+.bg_mesh_1 {
+    animation: skew 1s infinite alternate;
+    border-top-left-radius: 6em;
+}
+.bg_mesh_2 {
+    animation: skew 1s infinite alternate;
+
+}
+.bg_mesh_3 {
+    animation: skew 1s infinite alternate;
+    border-bottom-right-radius: 6em;
+}
+
+@keyframes skew {
+    0% {
+        transform: skewX(20deg);
+    }
+    100% {
+        transform: skewX(-20deg);
+    }
+}
